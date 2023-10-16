@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barão</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/logo-ph.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <nav>
+      <div class="content flex_space">
+        <div class="logo">
+          <img src="#" alt="Logo do colégio aqui!!! (talvez precise ajustar o header para caber a logo) " style="color: white;">
+        </div>
+        <div class="navlinks">
+          <ul id="menulist">
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#about">Sobre</a> </li>
+            <li><a href="#topics">Tópicos</a> </li>
+            <li><a href="#photos">Imagens</a> </li>
+          </ul>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+  </nav>
+
+    <script>
+      var menulist = document.getElementById('menulist');
+      menulist.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menulist.style.maxHeight == "0px") {
+          menulist.style.maxHeight = "100vh";
+        } else {
+          menulist.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <section class="home" id="home">
+      <div class="content">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/img/img-01.jpg" alt="">
+            <div class="text">
+              <h1>A melhor escola que existe!</h1>
+              <p>Aqui você vai encontrar um pouco mais desse colégio que tanto amamos!
+              </p>
+              <div class="flex">
+                <button class="secondary-btn">Saiba mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/img-02.png" alt="">
+            <div class="text">
+              <h1>Saiba a história do nosso colégio!</h1>
+              <p>Vamos trazer vários eventos e imagens da trajetória que o colégio teve para chegar até aqui.
+              </p>
+              <div class="flex">
+                <button class="secondary-btn">Entre em Contato</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/img-ph.png" alt="">
+            <div class="text">
+              <h1>Veja como está hoje em dia</h1>
+              <p>Temos o começo mas também temos atualmente, 60 anos depois.
+              </p>
+              <div class="flex">
+                <button class="secondary-btn">Entre em Contato</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    </script>
+
+    <section class="about top">   
+      <div class="container flex" id="about">
+        <div class="left">
+          <div class="heading">
+            <h1>Bem Vindo</h1>
+            <h2><strong>Barão</strong> do <strong>Rio Branco</strong></h2>
+          </div>
+          <p>Esse site foi feito para comemorar e deixar eternizado o aniversário de 60 anos do colégio <strong>Barão do Rio Branco</strong>.</p>
+          <button class="primary-btn">Saiba Mais!</button>
+        </div>
+        <div class="right">
+          <img src="assets/img/logo-ph.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="topics" id="topics">
+      <div class="container top">
+        <div class="heading">
+          <h1>Tópicos</h1>
+          <h2>Tópicos</h2>
+          <p>Aqui temos alguns tópicos específicos para cada assunto, divirta-se!</p>
+        </div>
+
+        <div class="content mtop">
+          <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Criação do Colégio</h2>
+                <p>Com criação da sede em 26 de janeiro em 1963 pelo governador 
+                  o Sr. Ney A. de Barros Braga e secretário da educação e cultura do Paraná o Sr.  Jacundino da Silva Furtado,
+                  eles em parceriam fundaram  vários colégios, espalhando assim a educação pelo Paraná e consequentemente em Londrina.</p>
+                <div class="button flex">
+                  <button class="primary-btn"><a href="../projeto-barao-60-anos/pag1.html">Veja Mais!</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Colégio Atualmente</h2>
+                <p>Hoje(2023) o Colégio Barão do Rio Branco conta com 42 turmas e 1350 alunos e o colégio 
+                  segue sempre se atualizando e trazendo novas tecnologias para seus alunos principalmente depois da Pandemia entre 2020-2021 [COVID-19], 
+                  onde novas tecnologias surgiram como vários aplicativos de estudos.</p>
+                <div class="button flex">
+                  <button class="primary-btn"><a href="../projeto-barao-60-anos/pag2.html">Veja Mais!</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Quem foi Barão do Rio Branco</h2>
+                <p>José Maria da Silva Paranhos Júnior, o Barão do Rio Branco (Rio de Janeiro, 20 de abril de 1845 — Rio de Janeiro, 10 de fevereiro de 1912), 
+                  foi um advogado, diplomata, geógrafo,professor, jornalista e historiador brasileiro com Bacharel em Direito pela Faculdade de Direito do Recife.
+                  </p>
+                <div class="button flex">
+                  <button class="primary-btn"><a href="../projeto-barao-60-anos/pag5.html">Veja Mais!</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Vínculos Barão do Rio Branco</h2>
+                <p>Conheça trajetoria até o nome Barão do Rio Branco. Em 1972 a Escola entrou em uma Reforma de Ensino, 
+                  com isso passou a se pertencer ao Complexo Educacional “José de Anchieta”.Em 1973 atingiu um total de 700 matrículas.
+                  Em 1974 com a implantação dos currículos de 7ª a 8ª série, na sede de Complexo, atribuindo então o ensino completo de 1ª Grau
+                  No ano de 1983 a Escola se denominou como Escola Estadual Barão do Rio Branco – Ensino de 1º Grau </p>
+                <div class="button flex">
+                  <button class="primary-btn"><a href="../projeto-barao-60-anos/pag4.html">Veja Mais!</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Primeiras Etapas</h2>
+                <p>Conheça os primeiros passos da construção do Colégio Barão do Rio Branco a sua sede foi construida com materiais de madeira, com apenas um andar, 
+                  para atender apenas alunos do ensino fundamental 1 , somente em 1972, 
+                  foi construída através de uma campanha promovida pela A.P.P, uma sala de 15m² para funcionar como sala de orientação para diretores, 
+                  pedagogos e professores.
+                  </p>
+                <div class="button flex">
+                  <button class="primary-btn"><a href="../projeto-barao-60-anos/pag3.html">Veja Mais!</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Curiosidades</h2>
+                <p>Curiosidades,você sabia que o colégio Barão do Rio Branco nem sempre foi chamado assim? Desde o ano de 1963 a nossa instituição foi se modificando e se adaptando conforme a passagem do tempo, 
+                  se tornando o que nós conhecemos hoje em dia. Essas e outras curiosidades como a merenda que alunos mais gostava antigamente
+                  ou o primeiro aluno a ser reprovado é só clicar em Veja mais.</p>
+                <div class="button flex">
+                  <button class="primary-btn"><a href="../projeto-barao-60-anos/pag6.html">Veja Mais!</a></button>
+                </div>
+              </div> 
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Tópico-7</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti provident soluta quas quisquam a, quos, 
+                  debitis repudiandae ipsum iure nobis magnam porro quasi eligendi totam iusto necessitatibus aperiam libero!</p>
+                <div class="button flex">
+                  <button class="primary-btn">Veja mais!</button>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="assets/img/img-ph.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Tópico-8</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti provident soluta quas quisquam a, quos, 
+                  debitis repudiandae ipsum iure nobis magnam porro quasi eligendi totam iusto necessitatibus aperiam libero!</p>
+                <div class="button flex">
+                  <button class="primary-btn">Veja mais!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $('.owl-carousel1').owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: true,
+        dots: false,
+        navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2,
+            margin: 10,
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    </script>
+
+
+
+    <section class="gallery">
+      <div class="container top">
+        <div class="heading">
+          <h1>Fotos</h1>
+          <h2>Nossa Galeria</h2>
+          <p>Algumas Fotos da grande história do Barão!
+        </div>
+      </div>
+
+      <div class="content mtop" id="photos">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-01.jpg" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-02.png" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-03.png" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-04.png" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-05.png" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-06.png" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-07.png" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-08.jpg" alt="">
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="assets/img/img-gal-09.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      $('.owl-carousel1').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 4,
+          },
+          1000: {
+            items: 6
+          }
+        }
+      })
+    </script>
+
+    <footer>
+      <div class="container grid">
+        <div class="box">
+          <img src="assets/img/#" alt="....Logo do Colégio (talvez precise de uns ajustes tbm)">
+          <p>Esse site foi feito para comemorar e deixar eternizado o aniversário de 60 anos do colégio Barão do Rio Branco.</p>
+          <div class="icon">
+            <button><a href="https://www.facebook.com/barao.doriobranco.3"><i class="fa fa-facebook-f"></i></a></button>
+            <button><a href="https://www.instagram.com/colegiobaraodoriobranco/">  <i class="fa fa-instagram"></i></a></button>
+          
+          </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+  </body>
+</html>
